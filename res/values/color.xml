@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- #AFEEEE	 PaleTurquoise	 弱绿宝石 -->
+    <!-- #4169E1	 RoyalBlue	 皇家蓝/宝蓝 -->
+    <!-- #F08080	 LightCoral	 淡珊瑚色 -->
+    <!-- #BA55D3	 MediumOrchid	 中兰花紫 -->
+    <color name="red">#ff0000</color>
+    <color name="pale_turquoise">#AFEEEE</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="light_coral">#F08080</color>
+    <color name="medium_orchid">#BA55D3</color>
+
+</resources>

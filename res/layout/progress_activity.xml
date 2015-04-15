@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/phone_title_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="手机信息：" />
+
+    <LinearLayout
+        android:id="@+id/top_content_layout"
+        style="@style/item_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_title_textView5"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_content_layout"
+        android:text="@string/wifi_value_mean"
+        android:textColor="@color/red" />
+
+    <ImageView
+        android:id="@+id/line01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginBottom="4dip"
+        android:layout_marginTop="4dip"
+        android:background="@drawable/line_read_option"
+        android:contentDescription="@null" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/download_btn"
+        android:layout_below="@+id/line01" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info_textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取设备信息..." />
+
+            <ImageView
+                android:id="@+id/line02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/line_read_option"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/my_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_title" />
+
+            <ProgressBar
+                android:id="@+id/download_n_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_horizontal_1"
+                android:secondaryProgress="0" />
+
+            <TextView
+                android:id="@+id/download_n_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/download_progress" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/w_title" />
+
+            <ProgressBar
+                android:id="@+id/download_w_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_horizontal_1"
+                android:secondaryProgress="0" />
+
+            <TextView
+                android:id="@+id/download_w_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/download_progress" />
+
+            <LinearLayout
+                style="@style/item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/n_textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/w_textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp" 
+                android:orientation="vertical"
+                style="@style/item_style">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wave_view_text"/>
+
+                <com.yao.download.myview.WaveView
+                    android:id="@+id/waveView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/line03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/line_read_option"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/ping_textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/copyright_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="版本号:1.0  版权:前海华视移动互联有限公司  "
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyright_textView5"
+        android:text="@string/test_str"
+        android:visibility="visible" />
+
+</RelativeLayout>

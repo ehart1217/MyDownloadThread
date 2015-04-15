@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">ViFi网速测试</string>
+    <string name="download_file_w_url">http://m.gdown.baidu.com/dba5c576119736f51f8e9f6d3045bdaa3c0b05e99770f9adf9880d17ec5a08701fb1e8bd640da5e3d50a6b85a751e5d989fddaa4ace46437af372d4f39e9ea91cd6f649766bdeed9d4cec15123c27fc4c7cdf96d93ae5f1987ace0b00b6152ad26d5dd986391d96613809f8c37646b6b5e2f5122f04297c6c12e326f32406c350849a3b6f56dfa810d8d5f6da464f567a23fe3e6a7d0e9f6dc5b6c82a138f3065d73ed19830ff05e9134d7eba80d69defca4b63aab8bcfbeb7d6e1e66761947dc57d2660614f3e30</string>
+    <!-- http://m.gdown.baidu.com/87f4bfd53d1c632e4f63582c27a75acc6f73baade99b267f7f3608701e0f77f9978283ba234cb2bd904db838f0f5642dbde76837f622b6f1dc66c027df39dfcb97a713862e4a39ef8b7a6512a231c36d7b9ebc175d06d86ca48d2fe303858b8ac3b5d3050fee788cecf744a2abd8bc76fb7ed4ac2afb5dfe9d6b241eaef3160b723b13fb8563add1c1250aa4f4faf971c989f6389ccca2c3524ab19573b95cf946e54247df72d7dfe41b13411881562d2c75f0bd0ffec6ac15dd31683c51045e172ffd92ba47058d48289c8c1480417254f7ae3f51f2fbd8a87989d5b73edc9cef36d238bfd1ee09 -->
+    <!-- http://m.gdown.baidu.com/f677d0264920725742c4543ada5474feccd3106ba8cf08cb5dd8cafa78d10fbc6ab7407c05598b57f745486a4bd74c74229143d393503e3bacfabdc2134d232de01bc3c666e54072225a5ab99deadbabf3dad9c73f9ff44a5da621578f30ed22d32fa25e675a9dca1bbd1afb6d4d2c65c1250aa4f4faf9710cdb089820eedc50de4a32263a90165cdb63497a7c7b5b04e816c3b88e38a5c88cbfe84143146ab1b8a4b6cd0c4a18cead75a4cb112dc4b27b90b52bfa3f8f93022eceec38bf03e3 -->
+    <string name="download_file_n_url">http://192.168.0.1/resource/video/video1001/video2007/1003933.mp4</string>
+    <string name="wifi_value_mean">VIFI信号强度值：0到-50表示信号最好，-50到-70表示信号偏差，小于-70表示最差，有可能连接不上或者掉线  \n 3G的信号范围：1~10：弱    11~20：一般        21~31：信号好</string>
+    <string name="n_title">内网下载</string>
+    <string name="w_title">外网下载</string>
+    <string name="download_progress">下载进度:</string>
+    <string name="checkbox_str">内网测试</string>
+    <string name="test_str">测试</string>
+    <string name="wave_view_text">下载速度波动图</string>
+
+</resources>
